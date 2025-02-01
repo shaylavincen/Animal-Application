@@ -1,0 +1,12 @@
+services:
+  mongodb:
+    image: mongo:6-jammy
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: aacuser
+      MONGO_INITDB_ROOT_PASSWORD: SNHU1234
+    ports:
+      - '27017:27017'
+    volumes:
+      - dbdata6:/data/db
+volumes:
+  dbdata6:
