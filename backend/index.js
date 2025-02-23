@@ -1,9 +1,12 @@
 const express = require('express');
 const mongoose = require("mongoose");
+const animals = require('./route');
 const app = express();
 const port = 3000;
 
-app.use(express.json())
+// to use route.js
+app.use(express.json());
+app.use('/animals', animals);
 
 app.get("/", async (req, res) => {
     return res.json({ message: "Animal Application" });
