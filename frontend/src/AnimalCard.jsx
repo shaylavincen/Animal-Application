@@ -9,21 +9,28 @@ import Link from '@mui/material/Link';
 export default function AnimalCard({ animal }) {
     return (
         <Card sx={{ maxWidth: 345 }}>
-            <CardMedia
+
+            {/* TODO add functionality to add different images to each card */}
+            {/* <CardMedia
+                
                 sx={{ height: 140 }}
-                image="/static/images/cards/contemplative-reptile.jpg"
-                title="green iguana"
-            />
+                image=""
+                title=""
+            /> */}
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                     {animal.name}
                 </Typography>
                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                    species, ranging across all continents except Antarctica
+                    Age: {animal.age} years old<br />
+                    Breed: {animal.breed} <br />
+                    Sex: {animal.sex}<br />
+
                 </Typography>
             </CardContent>
-            <CardActions>
+            {/* TODO add functionality to a clickable link to enable updating animals */}
+            {/* <CardActions>
+                
                 <Link
                     component="button"
                     variant="body2"
@@ -34,7 +41,7 @@ export default function AnimalCard({ animal }) {
                 >
                     Edit
                 </Link>
-            </CardActions>
+            </CardActions> */}
         </Card>
     );
 }

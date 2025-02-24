@@ -3,6 +3,9 @@ const mongoose = require("mongoose");
 const animals = require('./route');
 const app = express();
 const port = 3000;
+const cors = require('cors');
+
+app.use(cors());
 
 // to use route.js
 app.use(express.json());
