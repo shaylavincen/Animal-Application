@@ -15,6 +15,6 @@ docker-compose down
 ### *Please use Postman to add, update, and delete animals!*
 
 To use put and delete use this in postman:
-http://localhost:3000/animals/put(or delete)/animalID
+http://localhost:3000/animals/put (or delete)/animalID
 
 
