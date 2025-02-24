@@ -25,7 +25,9 @@ You will need to add your own animals to the database. Please use the following 
 }
 ```
 To use put and delete use this in postman:
+```
 http://localhost:3000/animals/put (or delete)/animalID
+```
 
 ## Additional Plans:
 - add buttons
