@@ -34,5 +34,5 @@ http://localhost:3000/animals/put (or delete)/animalID
     - add animal
     - update animal
     - delete animal
-- enable adding pictures to animal Cards
-- add filters and sorts to website
+- enable adding pictures to animal cards
+- add filters and sort to website
